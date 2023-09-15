@@ -10,3 +10,7 @@ export type People = {
     firstName: string,
     lastName: string
 }
+
+export type IdPeople = {
+    id:number
+}

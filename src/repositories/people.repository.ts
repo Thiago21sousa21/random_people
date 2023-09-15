@@ -1,8 +1,8 @@
 import { db } from "../database/database"
 import { People } from "../protocols/protocols";
-
+import { IdPeople } from "../protocols/protocols";
 const getIds = async()=>{
-    const array = await db.query(`
+    const array = await db.query<IdPeople>(`
         SELECT id FROM people;
     `);
     console.log(array)
