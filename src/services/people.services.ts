@@ -9,7 +9,6 @@ const sort = async()=>{
     if(array.length === 0 )throw errorsList.notFound('ids')    
 
     array.sort(misturar)
-    console.log(array)
     const people = await peopleRepository.getPeople(array[0].id)
     return people
 }

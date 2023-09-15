@@ -5,7 +5,6 @@ const getIds = async()=>{
     const array = await db.query<IdPeople>(`
         SELECT id FROM people;
     `);
-    console.log(array)
     return array.rows;
 }
 
